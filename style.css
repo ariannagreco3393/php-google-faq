@@ -1,0 +1,58 @@
+span  {
+    color: #4086f4;
+       
+   }
+
+ul{
+    list-style: none;
+}
+
+ul li:hover{
+    color: #4086f4;
+    border-bottom:3px solid #4086f4;
+}
+
+
+li,
+p{
+    padding: 15px;
+}
+
+
+
+p{
+    font-size: .95rem;
+}
+
+#main-nav ul{
+    padding: 0;
+    border-bottom: 1px solid lightgrey;
+
+
+}
+
+
+
+main{
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+
+
+.underline{
+    color: #4086f4;
+    border-bottom:3px solid #4086f4;
+
+}
+
+.logo{
+    padding: 15px;
+}
+
+.logo h2{
+    padding-left: 10px;
+}
+
+
+
