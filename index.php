@@ -15,7 +15,7 @@ $dbFAQ = [
             <p> Siamo costantemente al lavoro per garantire un'elevata sicurezza, proteggere la tua privacy e rendere Google ancora più efficace ed efficiente per te. Spendiamo centinaia di milioni di dollari ogni anno per la sicurezza e ci avvaliamo di esperti di fama mondiale in materia di sicurezza dei dati per mantenere le tue informazioni al sicuro. Abbiamo inoltre sviluppato strumenti per la sicurezza e la privacy di facile utilizzo come Google Dashboard, la verifica in due passaggi e Impostazioni annunci. Così, per quanto riguarda le informazioni che condividi con Google, hai il massimo controllo.</p>
             
             <p> Puoi leggere ulteriori informazioni sulla sicurezza online, incluso come proteggere te e la tua famiglia online, nel <span>Centro Google per la sicurezza online</span> .</p>
-            
+
             <p> <span>Scopri</span> quali misure adottiamo per garantire protezione e sicurezza alle tue informazioni personali, lasciando a te il controllo.</p>",
 
     ],
@@ -65,7 +65,7 @@ $dbFAQ = [
 <body>
     <header>
         <div class="logo d-flex align-items-center">
-            <img height="35px"  src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png" alt="">
+            <img height="35px" src="https://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png" alt="">
             <h2 class="text-secondary fs-4">Privacy & Termini</h2>
         </div>
         <nav id="main-nav">
@@ -95,14 +95,60 @@ $dbFAQ = [
     <footer>
         <div class=" bg-light">
             <ul class="d-flex mb-0">
-            <li><a href="#" class=" text-decoration-none text-secondary">Google</a></li>
-            <li><a href="#" class=" text-decoration-none text-secondary">Tutto su Google</a></li>
-            <li><a href="#" class=" text-decoration-none text-secondary">Privacy </a></li>
-            <li><a href="#" class=" text-decoration-none text-secondary">Termini</a></li>
+                <li><a href="#" class=" text-decoration-none text-secondary">Google</a></li>
+                <li><a href="#" class=" text-decoration-none text-secondary">Tutto su Google</a></li>
+                <li><a href="#" class=" text-decoration-none text-secondary">Privacy </a></li>
+                <li><a href="#" class=" text-decoration-none text-secondary">Termini</a></li>
             </ul>
-           
+
         </div>
     </footer>
 </body>
 
 </html>
+
+<?php
+/* 
+
+La differenza di sintassi:
+
+// array numerico (per liste di elementi, solitamente dello stesso tipo)
+$carBrand = [
+    'Ferrari',
+    'Porsche',
+    'Lamborghini'
+];
+
+//array associativo (per elementi non omogenei, come le caratteristiche di una persona)
+$person = 
+    'name' => 'Tiziano',
+    'age' => 27,
+    'height' => 1.85
+];
+recuperare un indice:
+// array numerico
+echo $carBrand[0];
+echo $carBrand[1];
+echo $carBrand[2];
+
+//array associativo
+echo $person['name'];
+echo $person['age'];
+echo $person['height'];
+errori comuni:
+// array "ibrido"
+[
+    "paragrafo1" => "Lorem ipsum 1",
+    "paragrafo2" => "Lorem ipsum 2",
+    "paragrafo3" => "Lorem ipsum 3",
+    "paragrafo4" => "Lorem ipsum 4"
+]
+questo array è un finto array associativo: se gli indici devono essere numerati "a mano" tanto vale che sia numerico
+[
+    "Lorem ipsum 1",
+    "Lorem ipsum 2",
+    "Lorem ipsum 3",
+    "Lorem ipsum 4"
+]
+perché mentre il foreach funzionerà esattamente allo stesso modo gli indici saranno assegnati automaticamente e già numerati
+*/
